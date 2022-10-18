@@ -1,0 +1,231 @@
+h1{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: rgb(214, 59, 245);
+}
+.imagespan > span{
+  height: 50px;
+  width: 50px;
+  align-self: right;
+
+}
+header > h1 {
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: aqua;
+  color: yellow;}
+h2 {
+
+  font-family:'Segoe UI';
+  font-size: 45px;
+  color: yellow;
+  text-align: center;}
+
+body{
+    background-color: black;}
+
+p, article, footer, a { 
+    color:rgb(222, 117, 243);
+    font-family:'Franklin Gothic Medium';
+    font-size: 20px;
+    size-adjust: 100%;}
+
+
+h3 { 
+  color: yellow;
+  font-size: 30px;
+  font-family: Verdana;
+  text-align: center;}
+
+
+.container1 {
+  background-color: rgb(232, 80, 209);
+  height: 50px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  max-width: 100%;
+  min-width: 100%;} 
+
+.container1 > div {
+  color: white;
+  background-color: red;
+  margin: 10px;
+  padding: auto;
+  font-size: 20px;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function:ease-in;
+  min-width: 70px;
+  min-height: 30px;  
+ } 
+ div > a {
+  color:black;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function:ease-in; } 
+
+
+
+
+  .carousel-inner{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-left:  100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly; }
+  
+    .spanimgtit {
+  height: 200px;
+  width: 200x;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly; }
+
+ form{ width: 450px;
+  margin: auto;
+  background-color: rgba(74, 9, 87, 0.4);
+  padding: 10px 20px ;
+  box-sizing: border-box; 
+  margin-top: 20px;
+  border-radius: 10px;}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box; 
+  font-size: 16px;
+  border: none;}
+
+textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;  }
+
+#boton{
+  background: #31384a;
+  color: yellow;
+  padding: 15px}
+
+#boton:hover {
+  cursor: pointer;
+
+}
+
+@media (max-width: 450px)
+{
+ form { width: 100%;}
+} 
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background: #12203E;
+	color: #fff;
+	grid-area: header;
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+.contenedor .sidebar {
+	background: #fAA43D;
+	text-align: right;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+	background: #55a8fd;
+	color: #fff;
+	height: 200px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+	grid-area: widget-2;
+}
+
+.contenedor .footer {
+	background: #12203E;
+	color: #fff;
+	grid-area: footer;
+}
+
+@media screen and (max-width: 600px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+	}
+
+}
+@media screen and (max-width: 1200px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+             }
+             }
+h3 > li {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+span > iframe{ 
+  height: 250px;
+  width: 350px;
+}
+.span1 > iframe
+ 
+{height: 50px;
+width: 50px;
+}
